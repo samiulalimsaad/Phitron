@@ -1,27 +1,28 @@
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
 int main() {
-    int money;
 
-    scanf("%d", &money);
+    int a;
 
-    if (money >= 10000) {
-        printf("Gucci Bag\n");
+    scanf("%d", &a);
 
-        if (money > 20000) {
-            printf("Gucci Belt\n");
+    if (a > 1000) {
+        a = a - 1000;
+        printf("I will buy Punjabi\n");
+        if (a >= 500) {
+            printf("I will buy new shoes\nAlisa will buy new shoes");
         }
-    }
-    else if (money >= 5000) {
-        printf("Levis Bag\n");
+
     }
     else {
-        printf("Something\n");
+        printf("Bad luck!\n");
     }
 
 
 
-
-
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     return 0;
 }
