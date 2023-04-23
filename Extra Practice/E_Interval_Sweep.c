@@ -2,16 +2,24 @@
 
 int main() {
 
-    int a, b, c;
+    int a, b, c, flag = 0;
     scanf("%d %d", &a, &b);
 
     c = b - a;
 
-    if (c % 2 == 0 || c % 3 == 0) {
-        printf("YES\n");
+    for (int i = a; i <= b; i++) {
+        if (i % 2 == 0 || i % 3 == 0) {
+            flag = 1;
+        }
+        else {
+            flag = 0;
+        }
+    }
+    if (flag == 0) {
+        printf("NO\n");
     }
     else {
-        printf("NO\n");
+        printf("YES\n");
     }
 
     return 0;
