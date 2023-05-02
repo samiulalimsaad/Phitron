@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 
-void capital_to_small() {
-    char c;
-    scanf("%c", &c);
-    if (c >= 'A' && c <= 'Z') {
-        printf("%c", c + 32);
+char capital_to_small(char ch) {
+
+    if (ch >= 'A' && ch <= 'Z') {
+        return  ch + 32;
     }
-    else {
-        printf("%c", c);
-    }
+    return  ch;
 }
 
 int main() {
-    capital_to_small();
+    char c;
+    scanf("%c", &c);
+    char ch = capital_to_small(c);
+    printf("%c", ch);
 
     return 0;
 }
