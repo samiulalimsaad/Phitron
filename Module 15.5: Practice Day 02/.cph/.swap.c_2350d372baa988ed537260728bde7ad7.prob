@@ -1,0 +1,1 @@
+{"name":"Local: swap","url":"/home/saad/Desktop/Phitron/module-practice/Module 15.5: Practice Day 02/swap.c","tests":[{"id":1683181769039,"input":"10 20","output":"20 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/saad/Desktop/Phitron/module-practice/Module 15.5: Practice Day 02/swap.c","group":"local","local":true}

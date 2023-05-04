@@ -1,0 +1,1 @@
+{"name":"Local: strlen","url":"/home/saad/Desktop/Phitron/module-practice/Module 15.5: Practice Day 02/strlen.c","tests":[{"id":1683181408872,"input":"hello","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/saad/Desktop/Phitron/module-practice/Module 15.5: Practice Day 02/strlen.c","group":"local","local":true}
