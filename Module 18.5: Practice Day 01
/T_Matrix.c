@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<math.h>
+#include <stdlib.h>
 
 int main() {
     int n, ld = 0, rd = 0;
@@ -17,16 +17,12 @@ int main() {
         for (int j = 0; j < n; j++) {
             if (i == j) {
                 ld += arr[i][j];
+                rd += arr[i][n - i - 1];
             }
-            printf("%d %d\n", j, a(j - i));
-            if (j - i == j) {
-                rd += arr[i][j];
-            }
-
         }
     }
 
-    printf("%d %d\n", ld, rd);
+    printf("%d\n", abs(ld - rd));
 
     return 0;
 }
