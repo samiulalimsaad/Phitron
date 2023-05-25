@@ -1,0 +1,6 @@
+Dynamic Memory of dynamic b =0x555c62342eb0
+Dynamic Memory Address of b after function return =0x555c62342eb0
+Dynamic Value of b =20
+Static Memory of b =0x7ffc21b4ef44
+Static Memory Address of b after function return =0x7ffc21b4ef6c
+Static Value of b =30

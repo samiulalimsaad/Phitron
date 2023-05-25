@@ -1,0 +1,39 @@
+// Why do we need dynamic memory allocation? Explain with examples.
+
+When we need a lot of memory. Stack size is 1 MB, so if we want bigger than 1MB than we should can allocate memory dynamically on runtime, else there is a risk of crash.
+
+if we need the memory a function returns. Dynamic memory is managed by a programmer.
+
+if we need to build a array that's  size is unknown then dynamically memory allocation is a good choice.  Dynamic memory allocation allows us to reuse a block of memory 
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int add_20(int a) {
+    int b = a + 20;
+    cout << "Static Memory of b =" << &b << endl;
+    return b;
+}
+int* add_10(int a) {
+    int* b = new int;
+    *b = a + 10;
+    cout << "Dynamic Memory of dynamic b =" << b << endl;
+    return b;
+}
+
+int main() {
+
+    int* a = add_10(10);
+
+    cout << "Dynamic Memory Address of b after function return =" << a << endl;
+    cout << "Dynamic Value of b =" << *a << endl;
+
+    int b = add_20(10);
+
+    cout << "Static Memory Address of b after function return =" << &b << endl;
+    cout << "Static Value of b =" << b << endl;
+
+
+    return 0;
+}

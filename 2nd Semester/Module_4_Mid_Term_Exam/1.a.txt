@@ -1,0 +1,16 @@
+// Explain Stack and Heap memory.
+
+Stack is a data structure in a memory where data store with a common rule Last In First Out (LIFO). Memory assign on compile time. it's fixed size.
+
+int main()
+{
+ 
+  int a;
+}
+
+Heap is a data structure in a memory where data location generate on runtime. Heap memory is allocated and de-allocated by a programmer. if a programmer can organize memory very well then there will no memory leak issue happen. on demand we can resize or extend the memory.
+
+int main()
+{
+   int *ptr  = new int[10];
+}
