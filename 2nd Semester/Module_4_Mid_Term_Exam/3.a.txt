@@ -1,0 +1,4 @@
+
+the size that an object allocates to the memory is 4 byte if object or instance is created using normal procedure. The largest data type of a class allocates to the memory.
+
+the size that an object allocates to the memory is 8 byte if object or instance is created using dynamic memory allocation.

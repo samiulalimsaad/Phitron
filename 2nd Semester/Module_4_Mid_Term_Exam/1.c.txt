@@ -1,0 +1,30 @@
+to create a integer variable in heap
+int* a = new int;
+*a = 10;
+cout << *a << endl;
+
+to create a float variable in heap
+float* c = new float;
+*c = 10.5;
+cout << *c << endl;
+
+to create a char variable in heap
+char* b = new char;
+*b = 'a';
+cout << *b << endl;
+
+to create a integer array in heap
+int* d = new int[10];
+for (int i = 0; i < 10; i++) {
+    d[i] = i + 1;
+}
+for (int i = 0; i < 10; i++) {
+    cout << d[i] << " ";
+}
+
+the benefits of using dynamic memory is 
+
+    1.  Heap can be used to create a variable of any size and it can be used to create a variable of any type
+    2.  Memory is allocated in any random order.
+    3.  Manually Memory Allocation and De-allocation by the programmer.
+    4.  Memory resizing is possible and flexible

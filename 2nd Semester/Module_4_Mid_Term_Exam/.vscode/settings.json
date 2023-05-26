@@ -3,6 +3,7 @@
         "*.jsx": "javascriptreact",
         "*.tsx": "typescriptreact",
         "new": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }

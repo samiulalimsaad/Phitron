@@ -1,1 +1,3 @@
-    cout << "Static Memory Address of b after function return =" << b << endl;
+t age;
+    float height;
+    char* name;

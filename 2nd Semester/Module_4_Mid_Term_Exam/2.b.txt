@@ -1,0 +1,30 @@
+// what is constructor in oop
+a constructor is a special method that is used to initialize a newly created object and is called just after the memory is allocated for the object.
+
+constructor method name is same as the class name.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Person {
+public:
+    int age;
+    char* name;
+
+    Person(int a, char* n) {
+        age = a;
+        name = n;
+    }
+};
+
+
+int main() {
+
+    Person p(20, "My Name");
+
+    cout << p.age << " " << p.name << endl;
+
+    return 0;
+}
+

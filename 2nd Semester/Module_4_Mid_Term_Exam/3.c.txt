@@ -1,0 +1,15 @@
+// Why do we need ->
+
+-> operator overcome an amazing limitation of the dot operator. The dot operator can only access the members of the object that are public. The -> operator can access all members of the object.
+
+-> is the sort form of (*). So, if we have a pointer to an object, we can use -> to access the members of the object.
+
+
+char name[] = "My Name";
+
+Person* p = new Person(20, 5.4, name);
+
+cout << (*p).age << p->age << endl;
+cout << (*p).height << p->height << endl;
+cout << (*p).name << p->name << endl;
+

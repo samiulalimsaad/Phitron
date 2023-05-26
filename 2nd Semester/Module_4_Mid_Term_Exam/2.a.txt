@@ -1,0 +1,26 @@
+
+class is a blueprint or template for creating objects with pre-defined properties and methods. 
+
+class Person {
+    public:
+        int age;
+        char* name;
+};
+
+object is a instance of a class that has properties and methods. 
+
+from the top example, Person is a class and if we create an instance of it, it would be an object.
+
+Person p;
+
+
+
+
+Person p;
+p.age = 10;
+char name[] = "My Name";
+p.name = name;
+
+cout << p.age << " " << p.name << endl;
+
+// output: 10 My Name

@@ -1,31 +1,31 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 
+class Person {
+public:
+    int age;
+    float height;
+    char* name;
 
-int add_20(int a) {
-    int b = a + 20;
-    cout << "Static Memory of b =" << &b << endl;
-    return b;
-}
-int* add_10(int a) {
-    int* b = new int;
-    *b = a + 10;
-    cout << "Dynamic Memory of dynamic b =" << b << endl;
-    return b;
-}
+    Person(int a, float h, char* n) {
+        age = a;
+        height = h;
+        name = n;
+    }
+};
+
 
 int main() {
 
-    int* a = add_10(10);
+    char name[] = "My Name";
+    char anotherName[] = "My Another Name";
 
-    cout << "Dynamic Memory Address of b after function return =" << a << endl;
-    cout << "Dynamic Value of b =" << *a << endl;
-
-    int b = add_20(10);
-
-    cout << "Static Memory Address of b after function return =" << &b << endl;
-    cout << "Static Value of b =" << b << endl;
+    Person p(20, 5.4, name);
+    cout << sizeof(p) << endl;
 
 
     return 0;
 }
+
+// Path: test.cpp
