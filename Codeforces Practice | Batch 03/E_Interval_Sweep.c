@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
 
@@ -7,20 +8,11 @@ int main() {
     scanf("%d %d", &a, &b);
 
 
-    for (int i = a; i <= b; i++) {
-        if (i % 2 == 0) {
-            even++;
-        }
-        else {
-            odd++;
-        }
-    }
-
-    if ((a != 0 && a == b) || even > 0 && odd > 0) {
-        printf("YES\n");
+    if ((a == 0 && a == b) || abs(a - b) >= 2) {
+        printf("NO\n");
     }
     else {
-        printf("NO\n");
+        printf("YES\n");
     }
 
 
