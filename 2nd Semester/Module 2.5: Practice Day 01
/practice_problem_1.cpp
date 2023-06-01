@@ -3,11 +3,11 @@ using namespace std;
 
 
 int* get_array(int n) {
-    int* arr[n];
+    int* arr = new int[n];
     for (int i = 0; i < n; i++) {
-        cin >> *arr[i];
+        cin >> arr[i];
     }
-    return *arr;
+    return arr;
 }
 
 int main() {
@@ -15,9 +15,9 @@ int main() {
 
     cin >> n;
     int* arr = get_array(n);
-    cout << &arr;
+
     for (int i = 0; i < n; i++) {
-        cout << &arr[i];
+        cout << arr[i] << " ";
     }
 
     return 0;
