@@ -2,6 +2,7 @@
     "files.associations": {
         "*.jsx": "javascriptreact",
         "*.tsx": "typescriptreact",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }
