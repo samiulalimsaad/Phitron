@@ -3,32 +3,27 @@ using namespace std;
 
 int main() {
 
-    char c[5];
-
-    for (int i = 0; i < 5; i++) {
-        cin >> c[i];
-    }
-
-    int result, flag = 0;
-
-    if (c[1] == '+' && c[0] + c[2] == c[4]) {
-        result = c[0] + c[2];
-        flag
-    }
+    long long a, b, c;
+    char op, eq;
+    cin >> a >> op >> b >> eq >> c;
+    // cout << a << " " << op << " " << b << " " << eq << a + b << " = ";
     if (
-        (c[1] == '+' && c[0] + c[2] == c[4]) ||
-        (c[1] == '-' && c[0] - c[2] == c[4]) ||
-        (c[1] == '*' && c[0] * c[2] == c[4])) {
-        cout << "Yes" << endl;
-    }
-    if (
-        (c[1] == '+' && c[0] + c[2] == c[4]) ||
-        (c[1] == '-' && c[0] - c[2] == c[4]) ||
-        (c[1] == '*' && c[0] * c[2] == c[4])) {
+        (op == '+' && a + b == c) ||
+        (op == '-' && a - b == c) ||
+        (op == '*' && a * b == c)) {
         cout << "Yes" << endl;
     }
     else {
-        cout << "No" << endl;
+        if (op == '+') {
+            cout << a + b << endl;
+        }
+        else if (op == '-') {
+            cout << a - b << endl;
+        }
+        else {
+            cout << a * b << endl;
+        }
+
     }
 
 
