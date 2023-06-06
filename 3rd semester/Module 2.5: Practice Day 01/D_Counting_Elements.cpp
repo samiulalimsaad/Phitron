@@ -6,17 +6,15 @@ int main() {
     cin >> n;
 
     vector<int> a(n);
-    map<int, int> freq;
 
     for (int i = 0; i < n; i++) {
         cin >> a[i];
-        freq[a[i]]++;
     }
 
     int count = 0;
 
     for (auto it : a) {
-        if (freq.count(it + 1) > 0) {
+        if (find(a.begin(), a.end(), it + 1) != a.end()) {
             count++;
         }
     }

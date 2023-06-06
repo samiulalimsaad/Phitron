@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
     string a;
-    int map[26] = { 0 };
+    vector<int> map(26, 0);
     cin >> a;
 
     for (int item : a) {
