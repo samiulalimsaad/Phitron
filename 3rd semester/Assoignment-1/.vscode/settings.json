@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.jsx": "javascriptreact",
+        "*.tsx": "typescriptreact",
+        "ostream": "cpp",
+        "valarray": "cpp"
+    }
+}
