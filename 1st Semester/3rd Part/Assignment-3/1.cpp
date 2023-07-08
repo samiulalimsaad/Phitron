@@ -122,6 +122,7 @@ int main() {
 
     cin >> n >> m;
 
+
     if (n != m) {
         cout << "NO" << endl;
         return 0;
@@ -139,18 +140,18 @@ int main() {
     }
 
 
+    vector<int> list1(n);
+    vector<int> list2(m);
+
     for (int i = 0; i < m; i++) {
-        if (stack.top() != queue.front()) {
-            cout << "NO" << endl;
-            return 0;
-        }
+        list1.push_back(stack.top());
+        list2.push_back(queue.front());
+        stack.pop();
+        queue.pop();
     }
 
-    cout << "YES" << endl;
-
-
-
-
+    if (list1 == list2) cout << "YES" << endl;
+    else cout << "NO" << endl;
 
     return 0;
 }
