@@ -4,7 +4,7 @@ using namespace std;
 
 const int MOD = 1e9 + 7;
 
-int is_possible(int arr[], int n, int t) {
+int max_ways(int arr[], int n, int t) {
     int dp[t + 1];
 
     for (int i = 1; i <= t; i++) dp[i] = 0;
@@ -29,7 +29,7 @@ int main() {
         int arr[n];
         for (int i = 0; i < n; i++) cin >> arr[i];
 
-        cout << is_possible(arr, n, target - m) << endl;
+        cout << max_ways(arr, n, target - m) << endl;
     }
 
     return 0;

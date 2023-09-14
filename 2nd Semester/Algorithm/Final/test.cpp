@@ -1,36 +1,63 @@
 #include <bits/stdc++.h>
 using namespace std;
+int min_char(string a, string b) {
 
+    int n = a.size();
+    int m = b.size();
 
-const int MOD = 1e9 + 7;
-
-int is_possible(int arr[], int n, int t) {
-    int dp[t + 1];
-
-    for (int i = 1; i <= t; i++) dp[i] = 0;
-    dp[0] = 1;
-
-    for (int i = 0; i < n; i++) {
-        for (int j = arr[i]; j <= t; j++) {
-            dp[j] = (dp[j] + dp[j - arr[i]]) % MOD;
+    int dp[n + 1][m + 1];
+    for (int i = 0; i <= n; i++) {
+        for (int j = 0; j <= m; j++) {
+            if (i == 0 || j == 0) dp[i][j] = 0;
         }
     }
 
-    return dp[t];
-}
-
-int main() {
-    int t; cin >> t;
-    int target = 1000;
-
-    while (t--) {
-        int n, m; cin >> n >> m;
-
-        int arr[n];
-        for (int i = 0; i < n; i++) cin >> arr[i];
-
-        cout << is_possible(arr, n, target - m) << endl;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
+            if (a[i - 1] == b[j - 1])  dp[i][j] = dp[i - 1][j - 1] + 1;
+            else dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+        }
     }
 
+    int i = n, j = m;
+    string ans;
+
+    while (i != 0 && j != 0) {
+        if (a[i - 1] == b[j - 1]) {
+            ans += a[i - 1];
+            i--;
+            j--;
+        }
+        else if (dp[i - 1][j] > dp[i][j - 1]) {
+            ans += a[i - 1];
+            i--;
+        }
+        else {
+            ans += b[j - 1];
+            j--;
+        }
+    }
+
+    while (i != 0) {
+        ans += a[i - 1];
+        i--;
+    }
+
+    while (j != 0) {
+        ans += b[j - 1];
+        j--;
+    }
+
+    return ans.length();
+}
+
+int main(int argc, char const* argv[]) {
+    int t; cin >> t;
+
+    while (t--) {
+        string a, b;
+        cin >> a >> b;
+        cout << min_char(a, b) << endl;
+    };
     return 0;
 }
