@@ -51,7 +51,7 @@ int min_char(string a, string b) {
     return ans.length();
 }
 
-int main(int argc, char const* argv[]) {
+int main() {
     int t; cin >> t;
 
     while (t--) {
