@@ -1,0 +1,15 @@
+List: A list is an ordered collection of elements. Lists are indexed, meaning we can access elements by their position (index) in the list.
+
+Dictionary: A dictionary is an unordered collection of key-value pairs. Each key in a dictionary is unique, and it is used to access its associated value.
+
+List: Lists maintain the order of elements. The first element we add to a list will be at index 0, the second at index 1, and so on.
+
+Dictionary: Dictionaries do not guarantee any specific order for their elements.
+
+List: We can access list elements by their index,
+
+Dictionary: We can access dictionary values by their unique keys
+
+List: Lists are commonly used when we have a collection of items that need to be stored in a specific order, and we want to access them by their positions. Lists are suitable for sequences of elements.
+
+Dictionary: Dictionaries are used when we need to store data that is best represented as a set of key-value pairs, where each value is associated with a unique key. Dictionaries are suitable for fast lookups and mappings.

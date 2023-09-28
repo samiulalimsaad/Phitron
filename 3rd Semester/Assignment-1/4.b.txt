@@ -1,0 +1,10 @@
+In Python, *args and **kwargs are special syntax used in function definitions to allow a variable number of arguments to be passed to a function. They are often used when we want to create flexible and generic functions that can accept different numbers of arguments or keyword arguments.
+
+*args (Arbitrary Positional Arguments):
+   *args is used to pass a variable number of non-keyword (positional) arguments to a function. It allows us to accept any number of positional arguments, and these arguments are packed into a tuple within the function.
+
+**kwargs (Arbitrary Keyword Arguments):
+   **kwargs is used to pass a variable number of keyword arguments (key-value pairs) to a function. It allows us to accept any number of keyword arguments, and these arguments are packed into a dictionary within the function.
+
+Combining *args and **kwargs:
+   We can use *args and **kwargs together in a function definition to create a function that accepts both positional and keyword arguments, providing maximum flexibility.
