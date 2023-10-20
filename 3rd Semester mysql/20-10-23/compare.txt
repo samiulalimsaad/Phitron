@@ -1,0 +1,11 @@
+- Data: Data refers to raw, unprocessed facts, figures, symbols, or values. It lacks context or meaning.
+- Information: Information is data that has been processed, organized, and given context, making it meaningful and useful for decision-making or understanding a specific situation.
+
+- Data: Data is collected and stored as a starting point for analysis, reporting, or further processing.
+- Information: Information is generated from data to inform or making decision.
+
+- Data: Different people might interpret the same data differently.
+- Information: Information is already interpreted and presented in a way that represent a particular message or context.
+
+- Data: "123456789" is data. It could be a sequence of numbers with no context.
+- Information: "Customer ID: 123456789" is information because it has context and meaning, indicating it is a customer identifier.
