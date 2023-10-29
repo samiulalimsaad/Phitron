@@ -1,0 +1,51 @@
+
+SQL joins are used to combine rows from two or more tables based on a related column between them. Here is the INNER JOIN, LEFT JOIN, RIGHT JOIN, and SELF JOIN with examples:
+
+INNER JOIN:
+   An INNER JOIN returns only the rows that have matching values in both tables being joined.
+   It filters out rows where there is no match in the specified columns.
+
+   Example:
+   Suppose we have two tables: "Orders" and "Customers." we want to retrieve a list of orders and their corresponding customer names for orders that have customers.
+
+   
+   SELECT Orders.OrderID, Customers.CustomerName
+   FROM Orders
+   INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+   
+
+LEFT JOIN:
+   A LEFT JOIN returns all the rows from the left table and the matching rows from the right table. If there is no match in the right table, NULL values are returned.
+
+   Example:
+   we want to retrieve a list of all customers and their orders, including customers who haven't placed any orders.
+
+   
+   SELECT Customers.CustomerName, Orders.OrderID
+   FROM Customers
+   LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+   
+
+RIGHT JOIN:
+   A RIGHT JOIN is the opposite of a LEFT JOIN. It returns all the rows from the right table and the matching rows from the left table. If there is no match in the left table, NULL values are returned.
+
+   Example:
+   we want to retrieve a list of all orders and their corresponding customer names, including orders without associated customers.
+
+   
+   SELECT Customers.CustomerName, Orders.OrderID
+   FROM Customers
+   RIGHT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+   
+
+SELF JOIN:
+   A SELF JOIN is a type of join where a table is joined with itself. It is used when we have hierarchical data or need to compare rows within the same table.
+
+   Example:
+   Suppose we have an "Employees" table, and we want to find employees who share the same manager. we can use a self-join to achieve this:
+
+   
+   SELECT e1.EmployeeName, e2.EmployeeName AS Manager
+   FROM Employees e1
+   JOIN Employees e2 ON e1.ManagerID = e2.EmployeeID;
+   

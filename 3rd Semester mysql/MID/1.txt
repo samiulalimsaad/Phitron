@@ -1,0 +1,16 @@
+A primary key and a composite primary key are both used in relational databases to uniquely identify records within a table.
+
+Primary Key:
+   A primary key is a single column or attribute within a table that is designated as the unique identifier for each row in that table.
+   It ensure that each value in the primary key column is unique and not null.
+   A primary key is used to establish relationships between tables through foreign keys.
+   It provides a simple and straightforward way to identify records uniquely.
+
+Composite Primary Key:
+   A composite primary key consists of two or more columns or attributes that combined and act as the unique identifier for each row in a table.
+   It is used when no single column can uniquely identify rows, but a combination of columns can.
+   The combination of columns in a composite primary key must be unique, but individual columns may not be unique by themselves.
+   Composite primary keys are often used in situations where the data's uniqueness depends on multiple attributes.
+
+Primary key (departpent_name)
+Composite Primary Key (first_name, last_name)

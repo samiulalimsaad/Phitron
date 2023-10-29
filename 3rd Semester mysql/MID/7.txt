@@ -1,0 +1,23 @@
+A subquery, also known as a nested query or inner query. this is a query nested within another SQL query. It's a query that is used within the context of another query, often to retrieve data needed for the main query or to filter results based on the results of the subquery.
+
+Here's an example of a subquery:
+
+Suppose we have two tables, "Orders" and "Customers," and we want to retrieve a list of customers who have placed orders. we can use a subquery within the WHERE clause to achieve this:
+
+
+    SELECT CustomerName
+    FROM Customers
+    WHERE CustomerID IN (SELECT CustomerID FROM Orders);
+
+
+In this example:
+
+The main query is SELECT CustomerName FROM Customers, which retrieves the names of customers from the "Customers" table.
+
+The subquery is (SELECT CustomerID FROM Orders), which retrieves a list of customer IDs from the "Orders" table.
+
+The subquery is enclosed in parentheses and used within the WHERE clause of the main query.
+
+The main query filters the list of customer names to only include those whose CustomerID is found in the result of the subquery. In other words, it returns a list of customer names for customers who have placed orders.
+
+The subquery is executed first, and its result is used by the main query to determine which customer names to retrieve. Subqueries can be used in various ways to perform more complex filtering, aggregation, and data retrieval tasks in SQL.

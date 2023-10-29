@@ -1,0 +1,19 @@
+Using JOIN queries and not using JOIN queries are two different approaches to retrieving and manipulating data from a relational database. The key differences betusen the two approaches are as follows:
+
+Using JOIN Queries:
+    JOIN queries are used when working with relational databases, where data is distributed across multiple tables. it allow us to retrieve related information from different tables by specifying how the tables are connected.
+
+    JOINs help maintain data integrity by ensuring that data in different tables is correctly related.
+
+    JOIN queries combine data from multiple tables based on common columns or relationships, making it easier to obtain a comprehensive view of related information.
+
+    In most cases, using JOIN queries is more efficient and faster than retrieving data from separate tables and then attempting to combine it in application code.
+
+    JOIN queries tend to be more readable and maintainable than complex code for combining data in application code.
+
+Not Using JOIN Queries:
+    When working with single tables or when the data doesn't require combining information from multiple tables, not using JOINs can simplify SQL queries.
+
+    In situations where only need data from one table, not using JOINs can reduce the overhead of specifying unnecessary relationships.
+
+    For simple operations, not using JOINs may reduce the complexity of SQL code and make it easier to write and understand.
