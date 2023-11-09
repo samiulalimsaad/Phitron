@@ -1,0 +1,8 @@
+The most captivating topic for me was sub query. In a nutshell, a subquery is a nested query where the inner query depends on the outer query. Each row processed by the outer query triggers a new execution of the inner query.
+
+What makes it fascinating is the dynamic interaction between the outer and inner queries. It's like a dance where the inner query adapts its steps based on the music played by the outer query. This interdependence adds a layer of complexity and flexibility, allowing perform operations that might be challenging with a standalone query.
+
+sub is like the multi taskers of SQL, responding to the context of each row in the outer query. It's a bit like having a conversation between queries, and mastering this skill opens up a world of possibilities for data retrieval and manipulation.
+
+
+so for me, it was very interesting. Because I did many queries without using SQL JOIN.

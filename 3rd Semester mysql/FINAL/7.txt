@@ -1,0 +1,26 @@
+In MySQL, UNION and UNION ALL are set operations that allow us to combine the results of multiple SELECT queries. 
+when we want to remove duplicates from the result set, we use UNION, and when we want to include all rows, including duplicates, we use UNION ALL. The choice is depends on the specific requirements.
+
+UNION:
+    - UNION is used to combine the result sets of two or more SELECT statements.
+    - It removes duplicate rows from the combined result set.
+    - The order of the columns in the result set is determined by the first SELECT statement.
+
+example:
+
+    SELECT column1, column2 FROM table1
+    UNION
+    SELECT column1, column2 FROM table2;
+
+
+UNION ALL:
+    - UNION ALL is similar to UNION, but it does not remove duplicate rows.
+    - It includes all rows from all SELECT statements in the result, whether they are duplicates.
+    - Since it doesn't need to check for and eliminate duplicates, UNION ALL is usually faster than UNION.
+
+example:
+
+    SELECT column1, column2 FROM table1
+    UNION ALL
+    SELECT column1, column2 FROM table2;
+
